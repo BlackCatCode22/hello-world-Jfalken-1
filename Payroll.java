@@ -17,7 +17,7 @@ public class Payroll {
         String name = "";
         int hoursWorked = 0;
         int overtimeHours = 0;
-        double payRate = 0;
+        double payRate = 0.0;
         double normalPay = 0.0;
         double overtimePay = 0.0;
         double payCheck = 0.0;
@@ -31,7 +31,7 @@ public class Payroll {
         hoursWorked = scanner.nextInt();
 
         System.out.println("Enter pay rate: ");
-        payRate = scanner.nextInt();
+        payRate = scanner.nextDouble();
 
 
         if (hoursWorked > 40) {
